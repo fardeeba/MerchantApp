@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".loginActivity">
+
+    <ImageView
+            android:layout_width="300dip"
+            android:layout_height="250dip"
+            android:src="@drawable/m10"
+    android:layout_centerHorizontal="true"></ImageView>
+
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:src="@drawable/logintitle"
+    android:layout_marginLeft="60dip"
+    android:layout_marginRight="60dip"
+    android:layout_marginTop="150dip"></ImageView>
+
+    <EditText
+            android:layout_width="310dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dip"
+            android:layout_marginLeft="22dip"
+            android:padding="10dip"
+            android:id="@+id/editText1"
+            android:textColor="@color/color1"
+            android:hint="Enter user name, email or phone no."
+            android:background="@drawable/roundededittext"></EditText>
+
+    <EditText
+            android:layout_width="305dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText1"
+            android:layout_marginLeft="27dip"
+            android:layout_marginTop="20dip"
+            android:padding="10dip"
+            android:background="@drawable/roundededittext"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColor="@color/color1"
+            android:id="@+id/editText2"></EditText>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_visibility_24"
+            android:layout_below="@id/editText1"
+            android:layout_marginLeft="300dip"
+            android:layout_marginTop="30dip"
+            android:id="@+id/showpassword"
+            android:onClick="showHidePassword"></ImageView>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/editText2"
+            android:text="LOGIN"
+            android:background="@drawable/roundedshape"
+            android:id="@+id/btnLogin"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+    ></Button>
+
+</RelativeLayout>
